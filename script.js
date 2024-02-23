@@ -22,7 +22,7 @@ let ex03 = () => {
 }
 
 let ex04 = () => {
-    let answer = +prompt("Em que ano o javascript foi criado?");
+    let answer = +document.getElementById('answer').value;
     let reply = document.getElementById('jsReply')
     if (answer == 1995) {
         reply.style.color = "green";
@@ -35,8 +35,8 @@ let ex04 = () => {
 }
 
 let ex05 = () => {
-    let val1 = document.getElementById('value1').value;
-    let val2 = document.getElementById('value2').value;
+    let val1 = +document.getElementById('value1').value;
+    let val2 = +document.getElementById('value2').value;
     let reply = document.getElementById('jsReply');
     console.log(val1, val2);
 
@@ -62,4 +62,8 @@ let ex07Mostra = () => {
 let ex07Esconde = () => {
     let img = document.getElementById('img');
     img.style.visibility = 'hidden';
+}
+
+let ex08 = () => {
+
 }

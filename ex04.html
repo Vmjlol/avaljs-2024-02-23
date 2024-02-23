@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 04</title>
 </head>
-<body onload="ex04()">
+<body>
     <h2>
         Criar uma página que faz uma pergunta ao usuário 
         (limitar a resposta a um valor numérico), 
@@ -15,9 +15,11 @@
         parágrafo em vermelho dizendo que o usuário errou;
     </h2>
 
+    <h3>Olá, em que ano o Javascript foi criado?</h3>
+    <input id="answer" type="number" placeholder="Insira sua resposta">
+    <button onclick="ex04()">Confirmar</button>
     <p class="" id="jsReply"></p>
 
-    <button onclick="ex04()">Tentar novamente</button>
     <script src="script.js"></script>
 </body>
 </html>
