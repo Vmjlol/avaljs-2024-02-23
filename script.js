@@ -65,5 +65,37 @@ let ex07Esconde = () => {
 }
 
 let ex08 = () => {
+    let weight = +document.getElementById('weight').value;
+    let height = +document.getElementById('height').value;
+    let reply = document.getElementById('jsReply');
+
+    let imc = weight / (height * height);
+    imc = imc.toFixed(2);
+
+    if (imc >= 40) {
+        reply.innerText = `IMC de ${imc}: Obesidade 3`;
+    } else if (imc >= 35) {
+        reply.innerText = `IMC de ${imc}: Obesidade 2`;
+    } else if (imc >= 30) {
+        reply.innerText = `IMC de ${imc}: Obesidade 1`;
+    } else if (imc >= 25) {
+        reply.innerText = `IMC de ${imc}: Sobrepeso`;
+    } else if (imc >= 18.6) {
+        reply.innerText = `IMC de ${imc}: Normal`;
+    } else {
+        reply.innerText = `IMC de ${imc}: Abaixo do peso`;
+    }
+}
+
+let ex09 = () => {
+    let number = +document.getElementById('number').value;
+    let reply = document.getElementById('jsReply');
+
+    for (let i = 1; i <= 10; i++) {
+        reply.innerText += `${number} x ${i}: ${number * i}\n`;
+    }
+}
+
+let ex10 = () => {
 
 }
