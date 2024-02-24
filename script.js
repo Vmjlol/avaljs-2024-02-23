@@ -90,12 +90,14 @@ let ex08 = () => {
 let ex09 = () => {
     let number = +document.getElementById('number').value;
     let reply = document.getElementById('jsReply');
+    let html = ``;
 
-    reply.innerText = "";
+    // reply.innerText = "";
 
     for (let i = 1; i <= 10; i++) {
-        reply.innerText += `${number} x ${i}: ${number * i}\n`;
+        html += `${number} x ${i}: ${number * i}\n`;
     }
+    reply.innerHTML = html;
 }
 
 let ex10 = () => {
@@ -122,7 +124,9 @@ let ex10 = () => {
     }
 
     if (getName !== '' && emailTest.test(getEmail) && getTel !== '') {
-        alert('Enviado com sucesso')
+        localStorage.setItem("name", getName);
+        localStorage.setItem("email", getEmail);
+        localStorage.setItem("cel", getTel);
     }
 
 }
